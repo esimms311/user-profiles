@@ -4,8 +4,8 @@ angular.module('userProfiles')
 	$scope.login = function( user ) {
 		friendService.login(user).then(function( response ) {
 			if (response.data.userFound) {
-				$location.path('/profile');
-			} else {
+			 $location.path('/profile');
+		 } else {
 				alert('user not found');
 			}
 		});
